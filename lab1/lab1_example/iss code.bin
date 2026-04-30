@@ -1,0 +1,78 @@
+//=====================================================
+//                  Outside libraries 
+//=====================================================	
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <math.h>
+#include <string.h>
+#include <inttypes.h>
+
+
+//=====================================================
+//         Definitions according to instructions
+//=====================================================
+
+#define INPUT_MAX_LEN         500
+#define MEMIN_LINE_LENGTH     8
+#define MEM_DEPTH			  65536
+
+typedef enum { 
+// fill here the operations
+} Operations;
+
+
+//=====================================================
+//					  Declerations
+//=====================================================
+	int 	zero;		//2bit
+	int	operation;	//5 bits
+	
+	int	dst;		//3 bits
+	int	src0;		//3 bits
+	int	src1;		//3 bits
+	int	imm;		//16 bits
+
+
+
+
+int MEM[MEM_DEPTH] = { 0 };
+int mem_order = 0;
+int test = 1;
+int reg_array[9] = { 0 }; // reg8=pc
+
+
+
+int load_mem(FILE* file_memin) {   //load memin.txt into MEM[] 
+	// fill here
+}
+
+int print_to_memout(FILE* file_memout) {  //called at the end of the run and print the MEM values into memout.txt
+	// fill here
+	return 0;
+}
+
+
+int print_to_trace(int inst_num, int zero, int operation, int dst, int src0, int src1, int reg_array[], char * opcode, int instruction_in_hexa, int memory[], FILE* trace) {
+
+// fill here- pay attention that the prints should be exactly as the example in respect for spaces/upper-lower case/space between lines etc.
+
+		return 0;
+	}
+
+
+char* exect_inst(FILE* file_trace,int num) { //collect the current instruction from memin.txt and execute it 
+	//fill here
+}
+
+
+int main(int argc, char *argv[])
+{
+	// fill her
+	// dont forget to close the files :)
+
+		return 0;
+	
+
+}
